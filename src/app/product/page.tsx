@@ -6,11 +6,15 @@ import { Button } from "@/components/ui/button";
 import { useMediaQueryScreen } from "mc-media-query";
 import { Card } from "@/components/ui/card";
 import product5 from "@/images/ryan-hoffman-6Nub980bI3I-unsplash.jpg";
+import { ShapeContainer, ShapeContent, clipPath } from "@/components/ui/shapes";
 
 export default function Page({}: {}) {
 	const matches = useMediaQueryScreen("(max-width: 768px)");
 	return (
 		<div className="flex justify-between max-xl:flex-col md:space-x-4 max-md:space-y-10">
+			<ShapeContainer>
+				<ShapeContent style={{ clipPath: clipPath.clipPathOne }}></ShapeContent>
+			</ShapeContainer>
 			<div className="w-full flex flex-col p-1 rounded-md overflow-hidden justify-center">
 				<div className="">
 					<AspectRatio ratio={matches ? 16 / 17 : 16 / 14} className="rounded-md h-[]">
