@@ -7,7 +7,7 @@ import { useMediaQueryScreen } from "mc-media-query";
 import { Card } from "@/components/ui/card";
 import product5 from "@/images/ryan-hoffman-6Nub980bI3I-unsplash.jpg";
 
-const ProductsPage = ({ product }: { product?: string }) => {
+export default function Page({}: {}) {
 	const matches = useMediaQueryScreen("(max-width: 768px)");
 	return (
 		<div className="flex justify-between max-xl:flex-col md:space-x-4 max-md:space-y-10">
@@ -36,4 +36,4 @@ const ProductsPage = ({ product }: { product?: string }) => {
 			</Card>
 		</div>
 	);
-};
+}
