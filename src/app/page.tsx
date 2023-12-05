@@ -16,7 +16,9 @@ export default function Home() {
 				<ModeToggle />
 			</div>
 			<Button onClick={handleToggleNav}>click me</Button>
-			<p className="mt-2 p-6">{state.toggle.toString()}</p>
+			<div className="mt-2 p-6 shadow-md rounded-md">
+				<p>{state.toggle.toString()}</p>
+			</div>
 			{isHeight.matches && (
 				<Button className="fixed bottom-5 z-40 right-3" variant="outline" size="sm">
 					<ArrowUp className="animate-bounce" onClick={scrollToTop} />
