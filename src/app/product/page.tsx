@@ -37,5 +37,3 @@ const ProductsPage = ({ product }: { product?: string }) => {
 		</div>
 	);
 };
-
-export default ProductsPage;

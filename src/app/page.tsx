@@ -9,7 +9,6 @@ export default function Home() {
 	const { state, handleToggleNav } = navState({ toggle: false });
 
 	const isHeight = useScrollHeight("100px", 250);
-	console.log(isHeight);
 
 	return (
 		<div className="p-10">
